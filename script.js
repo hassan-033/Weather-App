@@ -16,6 +16,12 @@ const getWeatherData = (city) => {
     return response.json();
   })
 }
+getWeatherData("London").then((res)=>{
+  console.log(res);
+}).catch((error)=>{
+  console.log(error);
+})
+
 
 /**
  * Retrieve city input and get the weather data
@@ -30,7 +36,6 @@ const searchCity = () => {
     console.log("Something happend");
   })
 }
-
 /**
  * Show the weather data in HTML
  */
